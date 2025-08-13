@@ -1,32 +1,25 @@
-# 🎉 Welcome to the Fun Calculator! 🎉
-# We're going to add, subtract, multiply, and divide two numbers like a boss! 😎
+# Step 1: Create an empty list
+my_list = []
 
-# Step 1: Ask the user to input the first number
-# We're using 'float()' to make sure our numbers can have decimals too. Fancy, right? ✨
-num1 = float(input("Enter the first number: "))
+# Step 2: Append elements 10, 20, 30, 40
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
 
-# Step 2: Ask the user to input the second number
-# Same trick here—using 'float()' for decimal magic! 🧙‍♂️
-num2 = float(input("Enter the second number: "))
+# Step 3: Insert 15 at the second position (index 1)
+my_list.insert(1, 15)
 
-# Step 3: Time to do some math! 🧠 Let's compute the sum, difference, product, and quotient.
+# Step 4: Extend with another list [50, 60, 70]
+my_list.extend([50, 60, 70])
 
-# Add the two numbers (Yay! Addition is the first step to fun!) ➕
-sum_result = num1 + num2
+# Step 5: Remove the last element
+my_list.pop()
 
-# Subtract the second number from the first (Negative vibes, but necessary! 😜) ➖
-difference_result = num1 - num2
+# Step 6: Sort in ascending order
+my_list.sort()
 
-# Multiply the two numbers (More bang for your buck! 💥) ✖️
-product_result = num1 * num2
-
-# Divide the first number by the second (Be careful with zero here, no math disasters! 😅) ➗
-# We'll assume the user is being responsible and not dividing by zero for now!
-quotient_result = num1 / num2
-
-# Step 4: Show the user what we got! 🥳 Time for the big reveal! 🎉
-print(f"Results of your two numbers:")
-print(f"Sum: {sum_result}")  # ➕
-print(f"Difference: {difference_result}")  # ➖
-print(f"Product: {product_result}")  # ✖️
-print(f"Quotient: {quotient_result}")  # ➗
+# Step 7: Find and print index of value 30
+index_of_30 = my_list.index(30)
+print("Final list:", my_list)
+print("Index of 30:", index_of_30)
